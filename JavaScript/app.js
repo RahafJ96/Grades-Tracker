@@ -35,9 +35,9 @@ function handelSubmit(event) {
 
     let newStudent = new Student(studentName, course);
 
+    newStudent.renderStudent();
     localStorage.setItem('student', JSON.stringify(studentInfo));
 
-    newStudent.renderStudent();
 }
 
 Student.prototype.renderStudent = function () {
@@ -77,20 +77,20 @@ function getFromLocalStorage() {
 
 //we need to render Again 
 function renderAgain() {
-    let trData = document.createElement('tr');
-
+    
     for (let i = 0; i < studentInfo.length; i++) {   
+        let trDatax = document.createElement('tr');
     let tdName = document.createElement('td');
     tdName.textContent = studentInfo[i].name;
-    trData.appendChild(tdName);
+    trDatax.appendChild(tdName);
 
     let tdGrade = document.createElement('td');
     tdGrade.textContent =  studentInfo[i].grade;
-    trData.appendChild(tdGrade);
+    trDatax.appendChild(tdGrade);
 
     let tdCourse = document.createElement('td');
     tdCourse.textContent =  studentInfo[i].course;
-    trData.appendChild(tdCourse);
+    trDatax.appendChild(tdCourse);
 
     let tdStatus = document.createElement('td');
     if(studentInfo[i].grade>='50'){
@@ -98,9 +98,10 @@ function renderAgain() {
     else{
         tdStatus.textContent = 'FAIL';
     }
-    trData.appendChild(tdStatus);
-    }
-    gradeTable.appendChild(trData);
+    trDatax.appendChild(tdStatus);
+    // console.log(trDatax);
+    gradeTable.appendChild(trDatax);
+}
 }
 
 
