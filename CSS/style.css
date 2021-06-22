@@ -1,0 +1,100 @@
+table,th,tr,td{
+    background-color: white;
+    border: solid #f5f5f5 1px;
+    border-collapse: collapse;
+    text-align: center;
+}
+table{
+    margin: auto;
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+th{
+    padding: 5px;
+    width: 80px;
+    height: 10px;
+    background-color: #1F1F1F;
+    font-weight: bold;
+}
+
+td{
+    background-color: #3D3D3D;
+    color: #f5f5f5;
+    padding-top: 5px;
+    padding-bottom: 5px;
+
+}
+
+body{
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+    background-image:url('../Img/school.jpg') ;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+h1{
+    font-size: 320%;
+    padding-top: 10px;
+}
+
+header{
+    background-color: #1F1F1F;
+    height: 80px;
+    text-align: center;
+    color:#f5f5f5;
+}
+
+#formContainer{
+    padding: 10px;
+    margin-top: 40px;
+    margin-left: 60px;
+    background-color: rgba(114, 104, 211, 0.8);
+    width: 15%;
+    height: 30%;
+    text-align: center;
+    color:#f5f5f5;
+    font-size: 20px;
+
+}
+
+input[type=text], select {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  input[type=submit] {
+    width: 80%;
+    background-color: #1F1F1F;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  #tableContainer{
+    padding: 10px;
+    background-color: rgba(114, 104, 211, 0.8);
+    width: 60%;
+    height: 100%;
+    text-align: center;
+    color:#f5f5f5;
+    font-size: 15px;
+    float: right;
+    margin-top: -300px;
+
+    margin-right: 100px;
+
+}
+  
+  

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades Tracker</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/reset.css">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+
+<body>
+    <header>
+      <h1>  Grades Tracker </h1>
+    </header>
+
+    <main>
+        <div id="formContainer"> 
+        <form id="gradesForm"><br>
+            <label for="studentName">Student Name:</label><br>
+            <input type="text" id="studentName" name="studentName"><br><br>
+            <!-- <label for="studentGrade">Student Grade:</label><br>
+            <input type="number" id="studentGrade" name="studentGrade"><br><br> -->
+            <label for="course">Course</label><br>
+            <select id="course" name="course" ><br>
+                <option value="math">Math</option>
+                <option value="english">English</option>
+                <option value="arabic">Arabic</option>
+                <option value="art">Art</option>
+                <option value="Science">Science</option>
+
+            </select><br><br>
+            <input type="submit" value="Submit Query"><br>
+
+        </form>
+    </div>
+
+    <div id="tableContainer">
+        <table id="gradeTable">
+
+        </table>
+
+    </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="JavaScript/app.js"></script>
+</body>
+
+</html>
